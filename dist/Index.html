@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+		<link rel="stylesheet" href="Style.css" />
+
+		<title>Document</title>
+	</head>
+	<body>
+
+		<input type="text" id="stockSymbol" placeholder="Please enter your stock symbol">
+		<input type="date" id="fromDate">
+		<input type="date" id="toDate">
+		<button type="submit">Search</button>
+
+
+		<div class="chart-container" style="position: relative; overflow-x: auto;">
+			<canvas id="myChart"></canvas>
+		</div>
+
+		
+
+		<script src="./jquery/dist/jquery.js"></script>
+		<script src="./handlebars/dist/handlebars.js"></script>
+		<script src="Model.js"></script>
+		<script src="Renderer.js"></script>
+		<script src="main.js"></script>
+		<script src="server.js"></script>
+	</body>
+</html>
